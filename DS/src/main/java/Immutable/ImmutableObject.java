@@ -1,7 +1,7 @@
-package advanced_java;
+package Immutable;
 import java.util.ArrayList;
 import java.util.List;
-import advanced_java.ImmutableList;
+
 public class ImmutableObject {
     /**
      * In object-oriented and functional programming, an immutable object is an object whose state cannot be modified after it is created
