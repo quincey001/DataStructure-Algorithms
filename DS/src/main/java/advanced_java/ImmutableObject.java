@@ -1,8 +1,7 @@
 package advanced_java;
-
 import java.util.ArrayList;
 import java.util.List;
-
+import advanced_java.ImmutableList;
 public class ImmutableObject {
     /**
      * In object-oriented and functional programming, an immutable object is an object whose state cannot be modified after it is created
@@ -14,6 +13,8 @@ public class ImmutableObject {
     /**
      * declare a static and final list doesn't mean it is an immutable list.
      */
+
+    private static final List<String> URL = ImmutableList.of("www.baidu.com", "www.google.com", "www.youtube.com");
     public static void main(String[] args){
         /**
          *  URL_LIST = new ArrayList<>();
@@ -26,5 +27,7 @@ public class ImmutableObject {
          * this is actually extremely dangerous. because they cannot alter your code and your code may
          * or may not behave entirely differently
          */
+        System.out.println(URL);
+        URL.add("wwww");
     }
 }
