@@ -33,5 +33,6 @@ public class lintcode200 {
         String s = "abcdzdcab";
         lintcode200 l = new lintcode200();
         System.out.println(l.longestPalindrome(s));
+        System.out.println(s.substring(4));
     }
 }
