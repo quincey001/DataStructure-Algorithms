@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms_string;
 
 public class lintcode415 {
     public static boolean isPalindrome(String s){

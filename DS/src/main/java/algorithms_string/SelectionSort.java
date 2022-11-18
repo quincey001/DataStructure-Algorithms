@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms_string;
 
 public class SelectionSort {
     int[] sort(int [] arr){
