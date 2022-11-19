@@ -12,9 +12,23 @@ public class ReverseWord {
         }
         return s;
     }
+    private StringBuffer Reverse2(StringBuffer s){
+        int left = 0;
+        int right = s.length() - 1;
+        while(left < right){
+            char a = s.charAt(left), b = s.charAt(right);
+            s.setCharAt(right, a);
+            s.setCharAt(left, b);
+            left++;
+            right--;
+        }
+        return s;
+    }
     public static void main(String[] args){
         ReverseWord rw = new ReverseWord();
         StringBuffer str = new StringBuffer("abcdefghijk");
         System.out.println(rw.Reverse1(str));
+        StringBuffer sb = new StringBuffer("yaffewfewfe");
+        System.out.println(rw.Reverse2(sb));
     }
 }
