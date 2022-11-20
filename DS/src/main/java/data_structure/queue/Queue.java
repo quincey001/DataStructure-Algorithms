@@ -1,6 +1,17 @@
 package data_structure.queue;
 
 public class Queue {
+    /**
+     * queue is a useful data structure in programming, it's kinda like some people taking the queue to
+     * buy ticket, the first one enter the queue will get the ticket first.
+     * it follows the principle FIFO
+     * application scenario:
+     * 1 - CPU scheduling, Disk scheduling
+     * 2 - When data is transfered asynchronously between two processes,
+     * The queue is used for synchronization, for example: IO Buffers, pipes, file IO,
+     * 3 - handling of interrupts in real-time system
+     * 4 - call center phone system, used queues to hold people calling in order
+     */
     private int[] arr ;
     private int capacity;
     private int front, rear;
