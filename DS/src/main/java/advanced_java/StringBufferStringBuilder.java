@@ -8,29 +8,44 @@ public class StringBufferStringBuilder {
      * will create another string object.
      * 2 - the StringBuffer object is mutable in java, it is used to change and
      * modify string objects.
-     * 3 -
+     *     1) the disadvantage is that all public methods for string buffer are synchronized.
+     *     2) StringBuffer provides thread safety but at a performance cost.
+     *
+     * 3 - In most of th scenarios, we don't use string in a multi-thread environment,
+     *     so StringBuilder is introduced as similar as StringBuffer except thread safety and synchronization.
+     *     1) StringBuilder has better performance than the StringBuffer, otherwise, use StringBuffer for
+     *     thread operations.
      */
-    public static void m1(String s1){
+    public static String m1(String s1){
         s1 = s1 + "lebron";
-        System.out.println(s1);
+//        System.out.println(s1);
+        return s1;
     }
-    public static void m2(StringBuilder s2){
+    public static StringBuilder m2(StringBuilder s2){
         s2.append("lebron");
-        System.out.println(s2);
+        return s2;
     }
-    public static void m3(StringBuffer s3){
+    public static StringBuffer m3(StringBuffer s3){
         s3.append("lebron");
-        System.out.println(s3);
+        return s3;
     }
     public static void main(String[] ags){
         String s1 = "chris";
         m1(s1);
-//        System.out.println(s1);
+        System.out.println(s1);
         StringBuilder s2 = new StringBuilder("chris");
         m2(s2);
-//        System.out.println(s2);
+        System.out.println(s2);
         StringBuffer s3 = new StringBuffer("chris");
         m3(s3);
-//        System.out.println(s3);
+        System.out.println(s3);
+
+        /**
+         *
+         */
+        String str = "java";
+        System.out.println(str.replace("a","o"));
+        System.out.println(str);
     }
+
 }
