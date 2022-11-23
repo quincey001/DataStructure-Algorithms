@@ -1,7 +1,9 @@
 package algorithms_string;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -27,6 +29,23 @@ public class leetcode1002 {
         }
         return result;
     }
+    public List<String> commonChar(String[] words){
+         List<String> arr = new ArrayList<>();
+         for(char a ='a'; a <= 'z'; a++){
+             int min_count = Integer.MAX_VALUE;
+             for(String s: words){
+                 int wordcount = 0;
+                 for(char i : s.toCharArray()){
+                     if(i == a){
+                         wordcount++;
+                     }
+                 }
+                 min_count = Math.min(min_count, wordcount);
+             }
+             for(int i = 0; i < min_count; i++) arr.add("" + a);
+         }
+         return arr;
+    }
     public static void main(String[] args){
 //        List<String> words = new ArrayList<String>();
 //        words.add("aaaa");
@@ -42,5 +61,6 @@ public class leetcode1002 {
         System.out.println(word);
         leetcode1002 l = new leetcode1002();
         System.out.println(l.commonChars(word));
+        System.out.println(l.commonChar(word));
     }
 }

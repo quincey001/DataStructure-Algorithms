@@ -51,6 +51,9 @@ public class Stack {
         stack.push(5);
         stack.pop();
         stack.printStack();
+        char a = 'a';
+        char b = 'b';
+        System.out.println(a+b);
         /**
          * The most common uses of a stack are:
          * 1 - To reverse a word - Put all the letters in a stack and pop them out.

@@ -1,9 +1,12 @@
-package algorithms_string;
+package algorithms_sorting;
 
 public class SelectionSort {
     int[] sort(int [] arr){
         int len = arr.length;
         for(int i = 0; i < len - 1; i++){
+            //set a border from index = i + 1; if the unsorted element index[i] < all the elements
+            // to the right of the border, the switch the index[i] with the smallest element.
+            //until the border move to the second last element
             int min_index = i;
             for(int j = i + 1; j < len; j++)
             {
