@@ -1,0 +1,14 @@
+Gradle is a build automation system that is fully open source and uses the concepts you see on Apache Maven
+and Apache Ant.
+(1) it uses domain-specific language based on the programming language Groovy,
+Differentiating it from Apache Maven, which uses XML for its project configuration.
+(2) it also determines the orders of tasks run by using directed acyclic graph.
+
+Maven is used for project build automation using java.
+(1) it helps you map out how a particular software is built, as well as its different dependencies.
+(2) it uses an XML file to describe the project that you are building, the dependencies of the software
+ with regards to third party modules and parts, the build order, as well as the needed plugins.
+
+ Gradle vs. Maven
+ Gradle: based on a graph of task dependencies in which tasks are the things that do the work
+ Maven: based on a fixed and linear model of phases.
