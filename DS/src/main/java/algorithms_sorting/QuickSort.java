@@ -15,8 +15,8 @@ public class QuickSort {
         }
         int pivot = array[(left + right) / 2];
         int index = partition(array, left, right, pivot);
-        quicksort(array, left, index - 1);
-        quicksort(array, index, right);
+        quicksort(array, left, index - 1);// quick sort left side
+        quicksort(array, index, right);//quick sort right side
     }
     static int partition(int[] array, int left, int right, int pivot){
         //pivot
