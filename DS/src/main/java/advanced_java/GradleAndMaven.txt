@@ -12,3 +12,6 @@ Maven is used for project build automation using java.
  Gradle vs. Maven
  Gradle: based on a graph of task dependencies in which tasks are the things that do the work
  Maven: based on a fixed and linear model of phases.
+
+
+ https://www.quora.com/How-can-I-fake-it-until-I-make-it-for-a-software-development-job
