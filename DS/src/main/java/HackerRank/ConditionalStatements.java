@@ -1,5 +1,5 @@
 package HackerRank;
-import java.io.*; 
+import java.io.*;
 public class ConditionalStatements {
     /**
      * Given an integer, , perform the following conditional actions:
