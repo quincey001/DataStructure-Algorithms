@@ -7,3 +7,5 @@
 [Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/advanced_java)
 ## 4. HackerRank exercises 
 [Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/HackerRank)
+## 5. Sorting algorithms 
+[Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/algorithms_sorting)
