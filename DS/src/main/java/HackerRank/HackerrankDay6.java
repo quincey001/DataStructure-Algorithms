@@ -2,6 +2,18 @@ package HackerRank;
 import java.io.*;
 import java.util.*;
 public class HackerrankDay6 {
+    /**
+     *
+     * Example
+     *
+     *
+     * Print abc def
+     *
+     * Input Format
+     *
+     * The first line contains an integer,  (the number of test cases).
+     * Each line  of the  subsequent lines contain a string, .
+     */
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sn = new Scanner(System.in);
