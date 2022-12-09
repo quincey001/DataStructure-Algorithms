@@ -1,5 +1,6 @@
 package data_structure.stack;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
@@ -31,5 +32,20 @@ public class leetcode169MajorityElement {
         if (count > len / 2)
             res = maj;
         return res;
+    }
+    public static void main(String[] args) {
+        List<Integer> A = new ArrayList<>();
+        A.add(3);
+        A.add(4);
+        A.add(5);
+        A.add(7);
+        A.add(3);
+        A.add(5);
+        A.add(3);
+        for(int a : A){
+            System.out.println(a);
+        }
+        leetcode169MajorityElement l = new leetcode169MajorityElement();
+        System.out.println(l.majorityElement(A));
     }
 }
