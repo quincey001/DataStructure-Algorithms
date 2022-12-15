@@ -33,6 +33,7 @@ public class LinkedList {
             current = current.next;
         }
     }
+
     public static void main(String[] args){
         LinkedList linkedList = new LinkedList();
         linkedList.append(1);
