@@ -13,14 +13,15 @@ public class leetcode136 {
     public int singleNumber(int[] nums) {
         int res = 0;
         for(int i : nums){
+            //binary operation
             res ^= i;
-            System.out.println(res);
+//            System.out.println(res);
         }
         return res;
     }
     public static void main(String[] args){
         int[] arr = new int[]{1,3,2,2,4,3,4};
         leetcode136 l = new leetcode136();
-        l.singleNumber(arr);
+        System.out.println(l.singleNumber(arr));
     }
 }
