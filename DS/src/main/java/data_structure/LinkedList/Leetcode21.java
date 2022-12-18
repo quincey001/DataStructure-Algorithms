@@ -39,10 +39,42 @@ class LinkedListOperations {
         }
         curr.next = new ListNode(data);
     }
-    public ListNode MergeTwoLists(ListNode list1, ListNode list2){
+    public static void MergeTwoLists(ListNode list1, ListNode list2){
+        ListNode temp = new ListNode(0);
+        ListNode curr = temp;
+        while(list1 != null && list2 != null){
+            if(list1.val <= list2.val){
+                curr.next = list1;
+                list1 = list1.next;
+            }else{
+                curr.next = list2;
+                list2 = list2.next;
+            }
+            curr = curr.next;
+
+        }
+        curr.next = list1 != null ? list1 : list2;
+        while (temp.next != null){
+            System.out.println(temp.next.val);
+            temp = temp.next;
+        }
+
 
     }
     public static void main(String[] args){
+        LinkedListOperations list1 = new LinkedListOperations();
+        list1.appendAtEnd(1);
+        list1.appendAtEnd(2);
+        list1.appendAtEnd(4);
+        LinkedListOperations list2 = new LinkedListOperations();
+        list2.appendAtEnd(1);
+        list2.appendAtEnd(3);
+        list2.appendAtEnd(4);
+//        System.out.println(list1.head);
+        ListNode l1 = list1.head;
+        ListNode l2 = list2.head;
+         MergeTwoLists(l1, l2);
+
 
     }
 }
