@@ -1,6 +1,11 @@
 package algorithms_sorting;
 
 public class BubbleSort {
+    /**
+     * bubble sort takes n^2 complexity time
+     * @param arr
+     * @return
+     */
     public int[] bubbleSort(int[] arr){
         int len = arr.length;
 
