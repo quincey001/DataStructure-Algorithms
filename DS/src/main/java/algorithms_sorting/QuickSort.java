@@ -1,6 +1,12 @@
 package algorithms_sorting;
 
 public class QuickSort {
+    /**
+     * the average expected time complexity is O(nlongn)
+     * @param arr
+     * @param i
+     * @param j
+     */
     static void swap(int[] arr, int i, int j){
         int tem = arr[i];
         arr[i] = arr[j];
@@ -34,5 +40,16 @@ public class QuickSort {
             }
         }
         return left;
+    }
+    public static void display(int[] arr){
+        for(int i : arr){
+            System.out.println(i);
+        }
+    }
+    public static void main(String[] args){
+
+        int[] array = {2,3,8,22,7,9,1,4,20};
+        quicksort(array);
+        display(array);
     }
 }
