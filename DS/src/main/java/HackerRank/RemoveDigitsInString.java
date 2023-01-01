@@ -5,7 +5,7 @@ public class RemoveDigitsInString {
         char[] charArray = str.toCharArray();
         String result = "";
         for(int i = 0; i < charArray.length; i++){
-            if(charArray[i] != '5'){// remove all digits: !Character.isDigit(charArray[i]) && 
+            if(charArray[i] != '5'){// remove all digits: !Character.isDigit(charArray[i]) &&
                 result += charArray[i];
             }
         }
