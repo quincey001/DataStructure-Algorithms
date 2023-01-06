@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class BalancedParentheses {
     private static char[][] token = {{'{','}'},{'[',']'},{'(',')'}};
-    public boolean isOpenTerm(char openTerm){
+    private boolean isOpenTerm(char openTerm){
         for(int i = 0; i < token.length; i++){
             if(token[i][0] == openTerm){
                 return true;
@@ -12,7 +12,7 @@ public class BalancedParentheses {
         }
         return false;
     }
-    public boolean isMatched(char openTerm, char closeTerm){
+    private boolean isMatched(char openTerm, char closeTerm){
         for(int i = 0; i < token.length; i++){
             if(token[i][0] == openTerm){
                 return token[i][1] == closeTerm;
@@ -21,7 +21,7 @@ public class BalancedParentheses {
         return false;
     }
 
-    public boolean isBalancedParen(String expression){
+    private boolean isBalancedParen(String expression){
         // give a stack to store the symbols
         java.util.Stack<Character> stack = new Stack<>();
         char[] exp_arr = expression.toCharArray();
@@ -36,5 +36,10 @@ public class BalancedParentheses {
             }
         }
         return stack.isEmpty();
+    }
+    public static void main(String[] args){
+        String s = "[{()}][][]()";
+        BalancedParentheses b = new BalancedParentheses();
+        System.out.println(b.isBalancedParen(s));
     }
 }
