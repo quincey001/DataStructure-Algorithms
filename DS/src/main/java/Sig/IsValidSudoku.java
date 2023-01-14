@@ -17,6 +17,9 @@ public class IsValidSudoku {
                 }
             }
         }
+        for(String s : seen){
+            System.out.println(s);
+        }
         return true;
     }
     public static void main(String[] args){
