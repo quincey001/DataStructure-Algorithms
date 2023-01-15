@@ -1,11 +1,21 @@
-# DataStructure-Algorithms
-## 1. It involves in some basic data structure that was coded in java programming 
-[Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/data_structure)
-## 2. It has some leetcode practises of different types questions.
+# Smash DataStructure-Sorting & Searching Algorithms In JAVA
+## 1. Data structure in Java
+[Link to the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/data_structure)
+
+## 2. Sorting Algorithms in Java
+[Link to the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/algorithms_sorting)
+
+## 3. Searching Algorithms in Java
+[Link to the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/algorithms_searching)
+
+## 4. Leetcode coding practise.
 [Click Link here to enter the directory](https://link-url-here.org)
-## 3. It has the advanced knowledge about java programming.
-[Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/advanced_java)
-## 4. HackerRank exercises 
+
+## 5. String Coding Questions
+[Link to the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/algorithms_string)
+
+## 6. HackerRank exercises 
 [Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/HackerRank)
-## 5. Sorting algorithms 
-[Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/algorithms_sorting)
+
+## 7. Advanced Java Programming.
+[Click Link here to enter the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/advanced_java)
