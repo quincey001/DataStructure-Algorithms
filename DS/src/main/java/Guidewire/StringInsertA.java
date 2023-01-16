@@ -1,6 +1,6 @@
 package Guidewire;
 
-public class StringOne {
+public class StringInsertA {
     public String solve(String s){
         StringBuilder sb = new StringBuilder(s);
         int countA = 0;
@@ -23,7 +23,7 @@ public class StringOne {
         return sb.toString();
     }
     public static void main(String[] args){
-        StringOne stringOne = new StringOne();
-        System.out.println(stringOne.solve("aababaahhh"));
+        StringInsertA stringOne = new StringInsertA();
+        System.out.println(stringOne.solve("aababaahhhaa"));
     }
 }
