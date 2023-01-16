@@ -1,4 +1,4 @@
-# Smash DataStructure-Sorting & Searching Algorithms In JAVA
+# Smash DataStructure & Algorithms In JAVA
 ## 1. Data structure in Java
 [Link to the directory](https://github.com/quincey001/DataStructure-Algorithms/tree/main/DS/src/main/java/data_structure)
 
