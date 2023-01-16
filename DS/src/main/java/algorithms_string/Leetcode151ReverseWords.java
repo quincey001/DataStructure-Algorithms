@@ -3,7 +3,6 @@ package algorithms_string;
 public class Leetcode151ReverseWords {
     public static String reverseWords(String s) {
         String[] stringArr = s.split(" ");
-
         String newStr = "";
         int index = stringArr.length - 1;
         while(index >= 0){
@@ -11,6 +10,16 @@ public class Leetcode151ReverseWords {
             if(stringArr[index] != ""){
                 newStr += " " + stringArr[index];
             }
+            index --;
+        }
+        return newStr.trim();
+    }
+    public static String reverseWord(String s) {
+        String[] stringArr = s.split(" +");//split the string by " " or multiple " "
+        String newStr = "";
+        int index = stringArr.length - 1;
+        while(index >= 0){
+            newStr += " " + stringArr[index];
             index --;
         }
         return newStr.trim();
