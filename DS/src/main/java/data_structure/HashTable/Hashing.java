@@ -6,6 +6,7 @@ public class Hashing {
      * large amounts of data to be indexed using keys commonly created by formulas.
      *
      * If the array is sorted, the best time complexity for searching a gaven value will be O(logn)
+     *
      * In the Linked list, it will perform a linear search, so the time complexity will be O(n)
      *
      * In the tree, the time complexity for searching a value will O(logn), because in this case,
