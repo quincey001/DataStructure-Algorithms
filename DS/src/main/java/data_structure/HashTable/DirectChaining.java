@@ -13,4 +13,10 @@ public class DirectChaining {
     DirectChaining(int size){
         hashTable = new LinkedList[size];
     }
+
+    // hash function to calculate the key
+    public int HashFunction(){
+        return 2;
+    }
+
 }
