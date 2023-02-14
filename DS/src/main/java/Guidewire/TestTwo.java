@@ -52,4 +52,21 @@ public class TestTwo {
      * a string without two identical letters next to each other by only considering the
      * first i-1 letters of the string S and adding
      */
+    public static int minDeletionCost(String s, int[] c){
+        int total_cost = 0;
+        int n = s.length();
+        for(int i = 0; i < n - 1; i++){
+            int min_cost = 0;
+            if(s.charAt(i) == s.charAt(i+1)){
+                 min_cost = Math.min(c[i], c[i+1]);
+            }
+            total_cost += min_cost;
+        }
+        return  total_cost;
+    }
+
+    public static void main(String[] args) {
+        int[] c = {0,1,2,3,4,5};
+        System.out.println(minDeletionCost("aaaaaa", c));
+    }
 }
