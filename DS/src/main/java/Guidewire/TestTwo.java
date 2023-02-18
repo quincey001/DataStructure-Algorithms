@@ -67,6 +67,6 @@ public class TestTwo {
 
     public static void main(String[] args) {
         int[] c = {0,1,2,3,4,5};
-        System.out.println(minDeletionCost("aaaaaa", c));
+        System.out.println(minDeletionCost("abcdef", c));
     }
 }
